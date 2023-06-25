@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="juego_manos.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="juego_manos.js"></script>
+</head>
+
+<body>
+    <header class="beginning">
+        <div class="container">
+            <section class="beginning-container">
+                <div class="container-text">
+                    <h1 class="beginning-title" id="mensaje1">Bienvenido al juego de Sheldon</h1>
+                    <h2 class="beginning-subtitle">Piedra, papel, tijera, rata, Spock</h2>
+                    <div>
+                        <a href="juego_manos.html" id="again"> Volver a jugar</a> <!-- cta: call to action -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="beginning-wave" style="overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(255, 255, 255);">
+                </path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <section class="beginning-play">
+            <button class="button" id="one" onclick="opcion(0);" count="">Piedra</button>
+            <button class="button" id="two" onclick="opcion(1);" count="">Papel</button>
+            <button class="button" id="three" onclick="opcion(2);" count="">Tijera</button>
+            <button class="button" id="four" onclick="opcion(3);" count="">Rata</button>
+            <button class="button" id="five" onclick="opcion(4);" count="">Spock</button>
+            <hr>
+            <div class="button" id="jugada"> ¡Aquí aparecerá tu jugada!
+                <div id="mensaje2"></div>
+                <div id="mensaje3"></div>
+                <div id="mensaje4"></div>
+            </div>
+        </section>
+    </main>
+
+    <div>
+        <h5 class="beginning-titlefive"> ¡Si no sabes como jugar dale clic al botón y verás las reglas con un simple vídeo del creador del juego!</h5>
+            <a class="button" id="reglas" content="5" href="https://www.youtube.com/watch?v=C7gneuyNLwE" target="_blank">Reglas del juego</a>
+    </div>
+
+
+
+
+
+
+
+
+    <!--     <h1 id="mensaje1">Juega ahora mismo!</h1> -->
+    <!--     <button class="button" id="one" onclick="opcion(0);" count="">Piedra</button>
+    <button class="button" id="two" onclick="opcion(1);" count="">Papel</button>
+    <button class="button" id="three" onclick="opcion(2);" count="">Tijera</button>
+    <button class="button" id="four" onclick="opcion(3);" count="">Rata</button>
+    <button class="button" id="five" onclick="opcion(4);" count="">Spock</button>
+    <div id="mensaje2"></div>
+    <div id="mensaje3"></div>
+    <div id="mensaje4"></div> -->
+
+<!--     <a class="fa-brands fa-facebook" href="#"></a>
+    <a class="fa-brands fa-whatsapp" href="#"></a>
+    <a class="fa-brands fa-instagram" href="#"></a> -->
+
+
+    <script src="https://kit.fontawesome.com/06f2e3d6da.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
